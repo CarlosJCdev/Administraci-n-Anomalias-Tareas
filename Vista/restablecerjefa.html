@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title>USAE</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="assets/css/restablecercon.css" />
+</head>
+<body>
+	
+<header>
+<nav>
+<ul>
+<br>
+<br>
+</ul>
+</nav>
+</header>	
+        
+<div class="login">
+<div class="login-header">
+<h1>Actualizar contraseña</h1>
+</div>
+   
+    
+<fieldset>  
+<form id="login" action="conexionBD/actualizarjefa.php" method="POST" > <!--Conexion BD con el metodo post-->
+<div class="login-form"> 
+<label for="vieja">Ingrese su correo electronico:</label> 
+    
+<br>
+    
+<input type="text" name="correo" id="email"  required="required" placeholder="Escriba su correo" onkeyup="this.value=Text(this.value)" maxlength="50"> 
+    
+<br>
+    
+<label>Escriba su nueva contraseña:</label>
+<input type="text" name="passw" id="passw" required placeholder="Escriba su contraseña" onkeyup="this.value=Num(this.value)" maxlength="15">
+<button type="submit" class="button" id="btnExito">Actualizar</button>
+<input type="submit" name="reg" class="button" value="Regresar" onclick="window.location.href='jefatura.php'">              
+</div>
+</form>
+</fieldset>
+</div>            
+
+<script src="assets/js/restricciones.js"></script>
+<script src="assets/js/valores.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+</body>
+</html>
